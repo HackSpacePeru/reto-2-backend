@@ -13,7 +13,7 @@ La entrega de este reto será una aplicación que funcione como phonebook que no
 
 El formato a enviar es un comprimido (.zip o .rar) con los archivos que impliquen tu api, se evaluará funcionalidad, más allá del css que se utilice.
 
-![Pantallazo]()
+![Pantallazo](http://imageshack.com/a/img540/5475/wf3lAM.png)
 
 ## Crea tu Firebase
 
@@ -77,19 +77,21 @@ $("elemento al que se le inserta el html").html("<p>HTML a insertar</p>");
 ```
 Por ejemplo, si tenemos un tabla estatica en html:
 
+```html
 <table id="Tabla">
-					<thead>
-						<tr>
-							<th>Nombre</th>
-							<th>Dirección</th>
-							<th>Celular</th>
-							<th>Correo</th>
-						</tr>
-					</thead>
-					<tbody>
-						<!-- tbody llenado con js --> 
-					</tbody>
+	<thead>
+	  <tr>
+	    <th>Nombre</th>
+	    <th>Dirección</th>
+	    <th>Celular</th>
+	    <th>Correo</th>
+	  </tr>
+	</thead>
+        <tbody>
+	<!-- tbody llenado con js --> 
+	</tbody>
 </table>
+```
 
 Podemos agregar un html de la siguiente manera:
 
