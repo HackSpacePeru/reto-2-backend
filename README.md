@@ -9,7 +9,7 @@ Para este reto las nuevas herramientas a entender son:
 
 ## Entrega del Reto 2
 
-La entrega de este reto será una aplicación que funcione como phonebook que nos permita listar, registrar, actualizar y eliminar contactos que esten almacenados en nuestro firebase , el reto implica conocimientos de frontend para contruir su css, sugerimos utilizar bootstrap, pero la idea principal es utilizar javascript y firebase. 
+La entrega de este reto será una aplicación que funcione como phonebook que nos permita listar, registrar, actualizar y eliminar contactos que estén almacenados en nuestro firebase , el reto implica conocimientos de frontend para construir el css, sugerimos utilizar bootstrap, pero el css y la manera como construyas la app dependerá de ti, la idea principal es utilizar javascript y firebase. 
 
 El formato a enviar es un comprimido (.zip o .rar) con los archivos que impliquen tu api, se evaluará funcionalidad, más allá del css que se utilice.
 
@@ -17,7 +17,7 @@ El formato a enviar es un comprimido (.zip o .rar) con los archivos que implique
 
 ## Crea tu Firebase
 
-Si aún no lo has hecho, registrarse para obtener una cuenta. Luego de haberlo hecho agrega el url de tu firebase a tu app como ya te lo explicamos.
+Si aún no lo has hecho, registrate para obtener una cuenta. Luego de haberlo hecho agrega el url de tu firebase a tu app como ya te lo explicamos.
 
 ```js
 var myFirebase = new Firebase('https://miFirebaseUrl.firebaseio.com/');
@@ -25,7 +25,7 @@ var myFirebase = new Firebase('https://miFirebaseUrl.firebaseio.com/');
 
 ## Crea tu estructura de datos
 
-En lenguaje javascript definiremos la estructura que se almacenara en formato JSON en nuestro firebase, ya que se trata de un phonebook, los datos primordiales serian el nombre, direccion, celular y el correo del contacto. Como se observa cada atributo de item a excepcion del id tiene asociado a un valor de un elemento html que nosotros escribiremos a la hora de hacer la vista html de nuestra app.
+En lenguaje javascript definiremos la estructura que se almacenará en formato JSON en nuestro firebase, ya que se trata de un phonebook, los datos primordiales serían el nombre, direccion, celular y el correo del contacto. Como se observa cada atributo de item a excepción del id tiene asociado a un valor de un elemento html que nosotros escribiremos a la hora de hacer la vista html de nuestra app.
 
 
 ```js
@@ -57,7 +57,7 @@ eliminar: function(id){
 ```
 ### Control de errores
 
-Dentro de nuestros metodos de actualizar y eliminar es recomendable incluir otro metodo que maneje errores al momento de conectarse y modificar elementos en la base de datos.
+Dentro de nuestros métodos de actualizar y eliminar es recomendable incluir otro metodo que maneje errores al momento de conectarse y modificar elementos en la base de datos.
 
 ```js
 var onComplete = function(error) {
@@ -70,12 +70,12 @@ var onComplete = function(error) {
 
 ## Renderizar un html para poder actualizar los datos en tiempo real
 
-Ya que necesitamos mostrar los datos en tiempo real (actuales) que se encuentran almacenados en nuestra base de datos, utilizaremos un html renderizado, esto quiere decir que el html se contruira como texto y luego gracias a javascript se incrustara en el documento html. Para ello utilizaremos el metodo que ya conocemos en jquery, html().
+Ya que necesitamos mostrar los datos en tiempo real (actuales) que se encuentran almacenados en nuestra base de datos, utilizaremos un html renderizado, esto quiere decir que el html se construirá como texto y luego gracias a javascript se incrustara en el documento html. Para ello utilizaremos el método que ya conocemos en jquery, html().
 
 ```js
 $("elemento al que se le inserta el html").html("<p>HTML a insertar</p>");
 ```
-Por ejemplo, si tenemos un tabla estatica en html:
+Por ejemplo, si tenemos un tabla estática en html:
 
 ```html
 <table id="Tabla">
@@ -118,7 +118,7 @@ renderHtml: function(){
 
 ## Utilizando underscore.js
 
-Utilizando la librería underscore.js y su metodo each(), nos permite repetir una funcion en una lista de elementos, iterando con cada uno. Puedes descargar la librería [aquí](http://underscorejs.org/).
+Utilizando la librería underscore.js y su método each(), nos permite repetir una funcion en una lista de elementos, iterando con cada uno. Puedes descargar la librería [aquí](http://underscorejs.org/).
 
 Primero incluimos la librería en nuestro html.
 
@@ -126,10 +126,8 @@ Primero incluimos la librería en nuestro html.
 <script src="http://underscorejs.org/underscore-min.js">
 ```
 
-Luego podemos utilizar su metodo each.
+Luego podemos utilizar su método each.
 
 ```js
 _.each(lista, funcion(input))
 ```
-
-
